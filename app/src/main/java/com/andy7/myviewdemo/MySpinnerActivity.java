@@ -30,10 +30,10 @@ public class MySpinnerActivity extends AppCompatActivity {
         hashMap.put(2, "RED");
         hashMap.put(3, "BLUE");
         myspinner.setHashMap(hashMap);
-        myspinner.setOnSelectorItemKey(new MySpinner.OnSelectorItemKey() {
+        myspinner.setOnSelectorItemKeyValue(new MySpinner.OnSelectorItemKeyValue() {
             @Override
-            public void obtainKey(int key) {
-                Log.i(TAG, "obtainKey: " + key);
+            public void obtainKeyValue(int key, String value) {
+                Log.i(TAG, "obtainKeyValue: " + key + "---->" + value);
             }
         });
     }

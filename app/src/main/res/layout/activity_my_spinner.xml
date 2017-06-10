@@ -11,8 +11,7 @@
     <com.andy7.myviewdemo.widget.MySpinner
         android:id="@+id/myspinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
+        android:layout_height="wrap_content">
 
     </com.andy7.myviewdemo.widget.MySpinner>
 

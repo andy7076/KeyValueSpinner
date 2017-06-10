@@ -32,7 +32,7 @@ public class MySpinner extends AppCompatSpinner implements MySpinnerAdapter.OnIt
     private ArrayList<String> list;
     public static String currentContent;
 
-    private OnSelectorItemKey onSelectorItemKey;
+    private OnSelectorItemKeyValue onSelectorItemKeyValue;
 
     private int[] outLocation = new int[2];
     private int pointX;
@@ -45,8 +45,8 @@ public class MySpinner extends AppCompatSpinner implements MySpinnerAdapter.OnIt
         list = new ArrayList<>();
     }
 
-    public void setOnSelectorItemKey(OnSelectorItemKey onSelectorItemKey) {
-        this.onSelectorItemKey = onSelectorItemKey;
+    public void setOnSelectorItemKeyValue(OnSelectorItemKeyValue onSelectorItemKeyValue) {
+        this.onSelectorItemKeyValue = onSelectorItemKeyValue;
     }
 
     @Override
@@ -133,15 +133,15 @@ public class MySpinner extends AppCompatSpinner implements MySpinnerAdapter.OnIt
             Map.Entry entry = (Map.Entry) iterator.next();
             if (value.equals(entry.getValue())) {
                 key = (int) entry.getKey();
-                onSelectorItemKey.obtainKey(key);
+                onSelectorItemKeyValue.obtainKeyValue(key, value);
                 break;
             }
         }
         return key;
     }
 
-    public interface OnSelectorItemKey {
-        void obtainKey(int key);
+    public interface OnSelectorItemKeyValue {
+        void obtainKeyValue(int key, String value);
     }
 
     /**
