@@ -19,7 +19,7 @@ Step 1. Add the JitPack repository to your build file
 Step 2. Add the dependency
 
 	dependencies {
-		 compile 'com.github.autotrans:KeyValueSpinner:v1.0.0'
+		 compile 'com.github.autotrans:KeyValueSpinner:{versionCode}'
 	}
 
 Step 3. to use
