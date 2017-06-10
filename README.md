@@ -3,7 +3,9 @@
 MaterialDesign风格
 
 ## Preview ##
-![](https://github.com/autotrans/KeyValueSpinner/blob/master/pic/preview.png?raw=true)
+<center>
+<img src="https://github.com/autotrans/KeyValueSpinner/blob/master/pic/preview.png?raw=true" width="40%" height="75%" />
+</center>
 
 ## How to ##
 Step 1. Add the JitPack repository to your build file
@@ -45,4 +47,4 @@ Step 3. to use
 ## Performance ##
 每个Spinner选项拥有键值信息，当选择选项时可以获得当前选项对应的键值信息，而不是简单的索引位置
 
-
+![](https://github.com/autotrans/KeyValueSpinner/blob/master/pic/performance.png?raw=true)
