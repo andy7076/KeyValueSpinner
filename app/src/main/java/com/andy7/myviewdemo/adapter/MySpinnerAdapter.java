@@ -12,9 +12,6 @@ import com.andy7.myviewdemo.R;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 /**
  * BeforeSaleFragment中的RecyclerAdapters
  * Created by andy7 on 2017/3/17.
@@ -60,14 +57,13 @@ public class MySpinnerAdapter extends RecyclerView.Adapter<MySpinnerAdapter.MyVi
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.txt_item_myspinner)
         TextView txtItemMyspinner;
-        @BindView(R.id.container_item_myspinner)
         LinearLayout containerItemMyspinner;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this, itemView);
+            txtItemMyspinner = (TextView) itemView.findViewById(R.id.txt_item_myspinner);
+            containerItemMyspinner = (LinearLayout) itemView.findViewById(R.id.container_item_myspinner);
         }
     }
 

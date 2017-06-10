@@ -8,12 +8,8 @@ import com.andy7.myviewdemo.widget.MySpinner;
 
 import java.util.HashMap;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 public class MySpinnerActivity extends AppCompatActivity {
 
-    @BindView(R.id.myspinner)
     MySpinner myspinner;
 
     private HashMap<Integer, String> hashMap;
@@ -24,7 +20,7 @@ public class MySpinnerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_spinner);
-        ButterKnife.bind(this);
+        myspinner = (MySpinner) findViewById(R.id.myspinner);
         hashMap = new HashMap<>();
         hashMap.put(1, "GREEN");
         hashMap.put(2, "RED");
